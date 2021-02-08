@@ -1,0 +1,18 @@
+apply from:"$projectDir/config.gradle"
+apply plugin:'war'
+apply plugin:'java'
+group projectGroup
+version projectVersion
+sourceCompatibility=projectSourceCompatibility
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils
+    compile group: 'eu.bitwalker', name: 'UserAgentUtils', version: '1.21'
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+}

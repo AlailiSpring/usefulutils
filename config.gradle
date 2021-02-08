@@ -1,0 +1,6 @@
+ext.projectGroup="com.alaili.homework"
+ext.projectVersion="1.0-SNAPSHOT"
+ext.projectSourceCompatibility=1.8
+
+ext.versions=[]
+
